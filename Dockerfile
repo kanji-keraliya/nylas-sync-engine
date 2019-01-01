@@ -25,8 +25,8 @@ ENV SODIUM_INSTALL system
 
 WORKDIR /usr/src/sync-engine
 
-#ENV SYNC_VERSION v0.3.0 # 8 Sep 2016 :'(
-ENV SYNC_VERSION 9febd2bdeea898b2a75d63d28f857ab730180dec
+#ENV SYNC_VERSION v0.3.0 # 24 Apr 2016 :'(
+ENV SYNC_VERSION 6d2c72336f931ed33a7427dbb1c76f4f51312ab6
 
 RUN curl -fSL "https://github.com/nylas/sync-engine/archive/$SYNC_VERSION.tar.gz" -o sync.tar.gz \
 	&& tar -xzf sync.tar.gz --strip-components=1 \
