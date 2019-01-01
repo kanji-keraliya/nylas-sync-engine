@@ -41,8 +41,6 @@ RUN pip install .
 
 COPY config.json secrets.yml /etc/inboxapp/
 
-chmod 777 entrypoint.sh
-
 USER 1000:1000
 COPY entrypoint.sh /usr/local/bin/
 ENTRYPOINT ["entrypoint.sh"]
